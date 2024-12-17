@@ -44,7 +44,7 @@ truck = {
     429: 'ShACMAN 01 429 QKA', 430:  'ShACMAN 01 430 QKA', 431: 'ShACMAN 01 431 QKA', 67: 'MAN 01 067 OMA',
     324: 'MAN 01 324 GMA', 325: 'MAN 01 325 GMA', 643: 'ShACMAN 01 643 LKA',645: 'ShACMAN 01 645 LKA' ,
     725: 'ShACMAN 01 725 LKA' , 913: 'ShACMAN 01 913 OKA' , 914: 'ShACMAN 01 914 OKA' , 573: 'ShACMAN 01 573 LKA',
-    574: 'ShACMAN 01 574 LKA'
+    574: 'ShACMAN 01 574 LKA' , 520: 'MAN Y 520 VC', 904: 'MAN 01 904 PKA', 314: 'MAN 314 JGA'
     
     }
 
@@ -54,12 +54,13 @@ ddName = {
     429: 'Umrzaqov Dilshod         ', 430:  'Kaimov Fayzulla   ', 431: 'Agzamov Iskandar    ', 67: 'Miryakubov Davron               ',
     324: '  Karimov Rixsiboy                             ', 325: 'Gulyamov Dilmurod    ', 643: 'Miraipov Baxtiyor     ',645: 'Akramov Farhod               ' ,
     725: 'Abdukarimov Temur   ' , 913: 'Karaxanov Baxromjon    ' , 914: 'Tulaganov Asatulla  ' , 573: 'Abdiraimov Shokir    ',
-    574: 'Karimov Burxon           '
+    574: 'Karimov Burxon           ' , 520: 'Babayev Avaz        ', 904: 'Fozilov Xusan            ', 314: 'Rahmonaliyev Ixtiyor          '
     }    
 volume = {
       325: '88', 324: '88', 67: '88', 
       725: '47', 913: '47', 516: '47', 517: '47', 137 : '47', 430: '47',
-      573: '56', 574: '56', 643: '56', 645: '56', 914 :'56', 136: '56', 429: '56', 431: '56'
+      573: '56', 574: '56', 643: '56', 645: '56', 914 :'56', 136: '56', 429: '56', 431: '56',
+      520: '88', 904: '47', 314: '47'
      }
 
 
