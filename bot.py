@@ -226,6 +226,10 @@ async def receive_variables(update: Update, context: ContextTypes.DEFAULT_TYPE,)
 
 # Botni ishga tushirish
 def main():
+
+    version = "1.0.0"  
+    print(f"Application Version: {version}")  
+    
     app = ApplicationBuilder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
