@@ -43,5 +43,4 @@ jobs:
           docker stop my-python-app || true
           docker rm my-python-app || true
           docker rmi my-python-app || true
-          docker pull my-python-app:${{ github.sha }}
           docker run -d --name my-python-app -p 8010:8000 my-python-app:${{ github.sha }}
