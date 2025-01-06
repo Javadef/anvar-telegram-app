@@ -28,8 +28,7 @@ jobs:
 
     # Build Docker image
     - name: Build Docker image
-      run: docker build --no-cache -t my-python-app:${{ github.sha }} .
-
+      run: docker build -t my-python-app .
 
     # Deploy to server using SSH with password
     - name: Deploy to Server
@@ -39,8 +38,6 @@ jobs:
         username: root # or replace with your user
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          # Stop and remove the existing container (if it exists)
           docker stop my-python-app || true
           docker rm my-python-app || true
-          docker rmi my-python-app || true
-          docker run -d --name my-python-app -p 8010:8000 my-python-app:${{ github.sha }}
+          docker run -d --name my-python-app -p 8010:8000 my-python-app
