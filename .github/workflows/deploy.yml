@@ -28,7 +28,8 @@ jobs:
 
     # Build Docker image
     - name: Build Docker image
-      run: docker build -t my-python-app .
+      run: docker build --no-cache -t my-python-app:${{ github.sha }} .
+
 
     # Deploy to server using SSH with password
     - name: Deploy to Server
@@ -40,4 +41,5 @@ jobs:
         script: |
           docker stop my-python-app || true
           docker rm my-python-app || true
-          docker run -d --name my-python-app -p 8010:8000 my-python-app
+          docker rmi my-python-app || true
+          docker run -d --name my-python-app -p 8010:8000 my-python-app:${{ github.sha }}
